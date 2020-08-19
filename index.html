@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLib Games</title>
+</head>
+<body>
+    <h1>Mad Lib Fun!!!</h1>
+    <h4> Please enter the following:</h4>
+    <form>
+            <p>
+                noun:
+                    <input id="noun">
+            </p>
+            <p>
+                verb: 
+                    <input id="verb">
+            </p>
+            <p>
+                adjective: 
+                    <input id="adjective">
+            </p>
+            <!-- <p>
+                adverb: 
+                    <input id="adverb">
+            </p> -->
+            <button onClick="getStory()">Create Story!!</button>
+            
+            <hr>
+            <div id="getStory">
+                    <p id="postAdjective"></p>
+                    <p id="postNoun"></p>
+                    <!-- <p id="postAdverb"></p> -->
+                    <p id="postVerb"></p>
+            </div>
+        </form>
+    <script>
+        function getStory() {
+            var noun = document.getElementById('noun').value;
+            var verb = document.getElementById('verb').value;
+            var adjective = document.getElementById('adjective').value;
+            // var adverb = document.getElementById('adverb').value
+
+            console.log(noun);
+            console.log(postNoun);
+
+            document.getElementById('postNoun').innerHTML = noun;
+            document.getElementById('postVerb').innerHTML = verb;
+            document.getElementById('postAdjective').innerHTML = adjective;
+            // document.getElementById('postAdverb').innerHTML = adverb;
+        }
+    </script>
+</body>
+</html>
